@@ -1,0 +1,62 @@
+{
+	"name": "theme-poznajkubernetes",
+	"version": "1.0.0",
+	"displayName": "Poznaj Kubernetes",
+	"homepage": "https://poznajkubernetes.pl/",
+	"description": "Official PoznajKubernetes Theme.",
+	"publisher": "poznajkubernetes-theme",
+	"license": "MIT",
+	"scripts": {
+		"dev": "node ./scripts/dev.js",
+		"build": "node ./scripts/build.js",
+		"lint": "node ./scripts/lint.js",
+		"package": "vsce package -o ./bin/poznajkubernetes-theme.vsix",
+		"vscode:prepublish": "npm run build"
+	},
+	"maintainers": [
+		"Piotrek <piotrek@poznajkubernetes.pl>"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/poznajkubernetes/visual-studio-code.git"
+	},
+	"bugs": {
+		"url": "https://github.com/poznajkubernetes/visual-studio-code/issues"
+	},
+	"engines": {
+		"vscode": "^1.13.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"poznajkubernetes",
+		"dark",
+		"theme",
+		"color-theme"
+	],
+	"icon": "icon.png",
+	"galleryBanner": {
+		"color": "#3c4557",
+		"theme": "dark"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "PoznajKubernetes",
+				"uiTheme": "vs-dark",
+				"path": "./theme/poznajkubernetes.json"
+			}
+		]
+	},
+	"devDependencies": {
+		"js-yaml": "^3.13.1",
+		"prettier": "^1.17.0",
+		"tinycolor2": "^1.4.1"
+	},
+	"__metadata": {
+		"id": "4e44877c-1c8d-4f9c-ba86-1372d0fbeeb1",
+		"publisherDisplayName": "PoznajKubernetes Theme",
+		"publisherId": "fbb3d024-f8f2-460c-bdb5-99552f6d8c4b"
+	}
+}
