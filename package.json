@@ -4,7 +4,7 @@
 	"displayName": "Poznaj Kubernetes",
 	"homepage": "https://poznajkubernetes.pl/",
 	"description": "Official PoznajKubernetes Theme.",
-	"publisher": "poznajkubernetes-theme",
+	"publisher": "poznajkubernetes",
 	"license": "MIT",
 	"scripts": {
 		"dev": "node ./scripts/dev.js",
